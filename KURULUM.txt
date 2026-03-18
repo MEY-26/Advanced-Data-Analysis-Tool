@@ -1,0 +1,79 @@
+# AHGv3 Bagimlilik Kurulumu
+
+NOT: pyDOE2 artik GEREKLI DEGIL. DOE modulu numpy/scipy ile calisir (Python 3.13 uyumlu).
+
+Tum bagimliliklar icin:
+
+## Onerilen yontem (uygulama ile ayni Python):
+
+**Windows'ta Python yolu bulunamazsa** asagidaki komutlari sirayla deneyin:
+
+1. Windows Python Launcher (cogunlukla calisir):
+   ```
+   py -3 -m pip install pyDOE2
+   ```
+
+2. python komutu:
+   ```
+   python -m pip install pyDOE2
+   ```
+
+3. Veya pyDOE2_kur.bat dosyasina cift tiklayin - otomatik dener.
+
+Tum bagimliliklar icin:
+   ```
+   py -3 -m pip install -r requirements.txt
+   ```
+
+## Kurulum kontrolu:
+
+```
+python -c "import pyDOE2; print('pyDOE2 OK')"
+python -c "import sklearn; print('scikit-learn OK')"
+```
+
+## Sadece pyDOE2 (DOE hatasi icin):
+
+```
+python -m pip install pyDOE2
+```
+
+## Sadece scikit-learn (DFA hatasi icin):
+
+```
+python -m pip install scikit-learn
+```
+
+Kurulumdan sonra uygulamayi YENIDEN BASLATIN.
+
+---
+
+## EXE ile calistiriyorsaniz:
+
+EXE (Data_Analysis.exe) kullanıyorsanız, pyDOE2 EXE icinde olmalidir.
+Yeni EXE olusturmak icin:
+
+1. Once bagimliliklari kurun:
+   python -m pip install -r requirements.txt
+
+2. EXE'yi yeniden olusturun:
+   python build_exe.py
+
+3. dist/Data_Analysis.exe dosyasini kullanin.
+
+(Eski EXE pyDOE2 icermiyordu - yeniden build gerekli.)
+
+---
+
+## pyDOE2 kurulu ama hata devam ediyorsa:
+
+pyDOE2 Python 3.13'e kurulu, uygulama baska Python (ornegin 3.12) ile calisiyor olabilir.
+
+Cozum: AHGv3_baslat.bat dosyasina cift tiklayin.
+Bu dosya uygulamayi py -3 (Python 3.13) ile baslatir - pyDOE2 orada kurulu.
+
+Veya terminalde (tam yol ile - C:\Python313 kullaniyorsa):
+  "C:\Python313\python.exe" main.py
+
+pyDOE2 kurulu ama hata devam ediyorsa - zorla yeniden kur:
+  "C:\Python313\python.exe" -m pip install --force-reinstall pyDOE2
