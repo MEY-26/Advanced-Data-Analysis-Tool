@@ -1,3 +1,9 @@
+# Advanced-Data-Analysis-Tool
+
+Statistical analysis and DOE desktop app: ANOVA, MANOVA, RSM, GRA, DFA, MRA. Excel import, surface plots, export. PySide6 + statsmodels + scikit-learn.
+
+---
+
 # RSM/ANOVA ve Degisim Analizi GUI Uygulamasi
 
 Talasli imalat operasyonuna ait olcum verilerini Excel'den okuyup, RSM (Response Surface Methodology) / ANOVA ve Degisim Analizi yapan masaustu GUI uygulamasi.
